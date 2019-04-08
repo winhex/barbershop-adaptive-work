@@ -1,0 +1,65 @@
+/*переменные                                             */
+ @bg-darkbrown: #292929; 
+
+
+/*                                       глобальные стили */
+
+ 
+ 
+ @font-face {
+  font-weight: normal;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+
+  src: url("../fonts/ptsansnarrow.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "PT Sans Narrow";
+  font-style: normal;
+
+  src: url("../fonts/ptsansnarrowbold.woff") format("woff");
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+
+  background-color: @bg-darkbrown;
+}
+
+ html {
+      box-sizing: border-box;
+ }
+
+ 
+
+ *, *::before, *::after {
+      box-sizing: inherit;
+ }
+
+ /*                                                 отладка*/
+
+ img:not([alt]), label:not([for]), input[type=submit]:not([value]) {
+      outline: 2px solid red;
+ }
+
+ /*                                                  отладка*/
+
+ .visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+ }
+
+ img {
+  max-width: 100%;
+  height: auto;
+}

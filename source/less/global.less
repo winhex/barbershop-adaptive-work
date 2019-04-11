@@ -1,6 +1,17 @@
 /*переменные                                             */
  @bg-darkbrown: #292929; 
 
+ @tablet-width: 768px;
+ @desktop-width: 1200px;
+/*переменные                                             */
+
+// миксины
+
+.reset-list() {
+     margin:0;
+     padding:0;
+     list-style: none;
+}
 
 /*                                       глобальные стили */
 
@@ -37,7 +48,11 @@ body {
       box-sizing: border-box;
  }
 
- 
+ body {
+      min-width: 320px;
+      margin:0;
+      pading: 0;
+ }
 
  *, *::before, *::after {
       box-sizing: inherit;
@@ -63,3 +78,15 @@ body {
   max-width: 100%;
   height: auto;
 }
+
+// .main-page {
+     
+//      width: 320px;
+// }
+
+.container {
+     width: 280px;
+     padding: 0 20px;
+     margin: 0 auto;
+}
+

@@ -13,17 +13,18 @@
         <!-- <picture class="main-header__logo"> -->
             <img class="main-header__img" src="img/mobile-logo.png" width="226" height="30" alt="логотип Барбершоп">
           <!-- </picture> -->
-      
-        <nav class="main-nav">
           <h1 class="visually-hidden">главная страница</h1>
+      
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             <div class="main-nav__container">
           <ul class="nav-list">
-            <li class="nav-list__item"><a href="#" class="nav-list__link">главная</a></li>
+            <li class="nav-list__item nav-list__item--active"><a  class="nav-list__link">главная</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">наши работы</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">записаться</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">контакты</a></li>
             <li class="nav-list__item"><a href="#" class="nav-list__link">html academy</a></li>
-            <li class="user-login"><a href="#" class="user-login__link">войти</a></li>
+            <li class="nav-list__item user-login"><a href="#" class="user-login__link"><svg class="user-login__icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/><polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/></svg> войти</a></li>
               
           </ul>
           
@@ -94,7 +95,7 @@
 
     </main>
 
-    
+    <script src="js/menu.js"></script>    
 
   </body>
 </html>

@@ -290,8 +290,9 @@ line-height: 24px;
         }
     .nav-list {
         display: flex;
-        width: 608px;
-    margin: 0 auto;
+        max-width: 92%;
+        margin: 0 auto;
+        margin-left: 65px;
     }
     .user-login {
         display: inline-block;
@@ -299,20 +300,19 @@ line-height: 24px;
     }
     .nav-list__item {
         border-bottom: none;
+        padding-right: 35px;
+        padding-left: 0;
     }
 
-    .stats__text--lying {
-        display: inline-block;
-        color: #b2b2b2;
-    }
+    
 
-    .stats__title {
-        margin-bottom: 15px;
+    .main-nav__toggle {
+      display: none;
     }
   }
 
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
       .nav-list {
           width: 907px;
           margin: 0 auto;

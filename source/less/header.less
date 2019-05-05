@@ -289,30 +289,37 @@ line-height: 24px;
         display: none;
         }
     .nav-list {
-      width: 907px;
-      margin: 0 auto;
-      display: flex;
-  }
+        display: flex;
+        max-width: 92%;
+        margin: 0 auto;
+        margin-left: 65px;
+    }
     .user-login {
         display: inline-block;
         margin-left: auto;
     }
     .nav-list__item {
         border-bottom: none;
+        padding-right: 35px;
+        padding-left: 0;
     }
 
     .stats__column .stats__text--lying {
         display: inline-block;
         color: #b2b2b2;
     }
-
-    .stats__title {
-        margin-bottom: 15px;
-    }
+    
 
     .main-nav__toggle {
       display: none;
     }
+
+  @media (min-width: @desktop-width) {
+      .nav-list {
+          width: 907px;
+          margin: 0 auto;
+          display: flex;
+      }
 
     .nav-list__item {
       padding-top: 10px;

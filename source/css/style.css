@@ -208,7 +208,7 @@ img {
 .user-login__icon polygon {
   fill: #ffffff;
 }
-.stats__text--lying {
+.stats__column .stats__text--lying {
   display: none;
   margin-top: 0;
 }
@@ -286,11 +286,11 @@ img {
     display: none;
   }
   .nav-list {
+    width: 907px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 608px;
-    margin: 0 auto;
   }
   .user-login {
     display: inline-block;
@@ -299,21 +299,33 @@ img {
   .nav-list__item {
     border-bottom: none;
   }
-  .stats__text--lying {
+  .stats__column .stats__text--lying {
     display: inline-block;
     color: #b2b2b2;
   }
   .stats__title {
     margin-bottom: 15px;
   }
-}
-@media (min-width: 768px) {
-  .nav-list {
-    width: 907px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .main-nav__toggle {
+    display: none;
+  }
+  .nav-list__item {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    border-top: 1px solid #886e5b;
+    border-bottom: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .nav-list__item:hover {
+    background-color: black;
+    border-top-color: black;
+  }
+  .nav-list__item .nav-list__link:hover {
+    color: #6a4d38;
+  }
+  .nav-list__item--active .nav-list__link:hover {
+    color: white;
   }
 }
 .stats {
@@ -405,4 +417,108 @@ img {
     display: -ms-flexbox;
     display: flex;
   }
+}
+.merits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.merits__title {
+  text-transform: uppercase;
+  color: #f7f4f1;
+  margin-top: 170px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.merits__item {
+  display: none;
+  text-align: center;
+  position: relative;
+}
+.merits__item--fast::before,
+.merits__item--cool::before,
+.merits__item--pricy::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 94px;
+  height: 95px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.merits__item--fast::before {
+  background-image: url("../img/advantage-1.png");
+  top: 100px;
+}
+.merits__item--cool::before {
+  background-image: url("../img/advantage-2.png");
+  top: -116px;
+}
+.merits__item--pricy::before {
+  background-image: url("../img/advantage-3.png");
+  top: -116px;
+}
+.merits__item--active {
+  display: block;
+}
+.merits__text {
+  color: #f7f4f1;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+.merits__list .stats__text--lying {
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .merits__title {
+    margin-top: 42px;
+  }
+  .merits__list .stats__text--lying {
+    display: none;
+  }
+  .merits__item {
+    display: block;
+    padding-left: 120px;
+    text-align: left;
+  }
+  .merits__item--fast::before,
+  .merits__item--cool::before,
+  .merits__item--pricy::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 94px;
+    height: 95px;
+    left: 50px;
+  }
+  .merits__item--fast::before {
+    background-image: url("../img/advantage-1.png");
+    top: 0;
+  }
+  .merits__item--cool::before {
+    background-image: url("../img/advantage-2.png");
+    top: 0;
+  }
+  .merits__item--pricy::before {
+    background-image: url("../img/advantage-3.png");
+    top: 0;
+  }
+  .merits__item:not(:last-child):after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    left: 7px;
+    height: 1px;
+    background-color: #4a4a4a;
+  }
+}
+.news {
+  background-color: #f8f5f2;
+  min-height: 50px;
 }

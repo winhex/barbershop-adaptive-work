@@ -1,0 +1,168 @@
+.merits__list  {
+    .reset-list();
+    padding-left:45px;
+    padding-right: 45px;
+}
+
+
+
+.merits__title {
+    text-transform: uppercase;
+    color: #f7f4f1;
+    margin-top: 170px;
+
+font-size: 30px;
+font-weight: 700;
+line-height: 30px;
+}
+
+.merits__item {
+    display: none;
+    text-align: center;
+    position: relative;
+
+    &--fast::before,
+    &--cool::before,
+    &--pricy::before {
+        content: "";
+          position: absolute;
+          
+          background-repeat: no-repeat;
+          width: 94px;
+          height: 95px;
+          
+          left: 50%;
+          transform: translateX(-50%);
+             
+          }
+          &--fast::before {
+              background-image: url("../img/advantage-1.png");
+              top: 100px;
+
+          }
+
+          
+          &--cool::before {
+              background-image: url("../img/advantage-2.png");
+              
+              top: -116px;
+    
+          }
+
+    
+          &--pricy::before {
+              background-image: url("../img/advantage-3.png");
+              
+              top: -116px;
+          }
+
+
+
+
+}
+
+.merits__item--active {
+    display: block;
+}
+// .merits__item::before {
+//     top: 0;
+// left: 50%;
+// width: 95px;
+// height: 94px;
+// transform: translateX(-50%);
+// }
+
+
+.merits__text {
+    color: #f7f4f1;
+
+font-size: 20px;
+font-weight: 400;
+line-height: 27px;
+}
+
+.merits__list .stats__text--lying {
+    display: inline-block;
+}
+
+
+
+@media (min-width: @tablet-width) {
+
+    .merits__title {
+        margin-top: 42px;
+    }
+
+    .merits__list .stats__text--lying {
+        display: none;
+    }
+
+    .merits__item {
+        display: block;
+        padding-left: 120px;
+        text-align: left;
+        &--fast::before,
+    &--cool::before,
+    &--pricy::before {
+        content: "";
+          position: absolute;
+          
+          background-repeat: no-repeat;
+          width: 94px;
+          height: 95px;
+          
+          left: 50px;
+          
+             
+          }
+          &--fast::before {
+              background-image: url("../img/advantage-1.png");
+              top: 0;
+          }
+
+          
+          &--cool::before {
+              background-image: url("../img/advantage-2.png");
+              
+              top: 0;
+    
+          }
+
+    
+          &--pricy::before {
+              background-image: url("../img/advantage-3.png");
+              
+              top: 0;
+          }
+    }
+
+    .merits__item:not(:last-child):after {
+        content: "";
+
+      position: absolute;
+      right: 10px;
+      bottom: -20px;
+      left: 7px;
+      height: 1px;
+      background-color: #4a4a4a;
+    }
+    
+    // .merits {
+    //     position: relative;
+    //     padding-bottom: 42px;
+    // }
+    // .merits:after {
+    //     content: ''; 
+    // position: absolute; /* Абсолютное позиционирование */
+    // left: 50%;
+    // bottom: -5px; /* Положение треугольника */
+    // border: 500px solid transparent; /* Прозрачные границы */
+    // border-top: 42px solid green; /* Добавляем треугольник */
+
+    // }
+
+
+
+
+
+}

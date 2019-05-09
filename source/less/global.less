@@ -34,8 +34,16 @@
   src: url("../fonts/ptsansnarrowbold.woff") format("woff");
 }
 
-body {
-  margin: 0;
+
+
+ html {
+      box-sizing: border-box;
+ }
+
+ body {
+     min-width: 320px;
+      margin:0 auto;
+  
   font-size: 18px;
   line-height: 27px;
   font-family: "PT Sans Narrow", Arial, sans-serif;
@@ -45,15 +53,7 @@ body {
   background-color: @bg-darkbrown;
 }
 
- html {
-      box-sizing: border-box;
- }
-
- body {
-      min-width: 320px;
-      margin:0;
-      pading: 0;
- }
+ 
 
  *, *::before, *::after {
       box-sizing: inherit;
@@ -85,9 +85,9 @@ body {
 //      width: 320px;
 // }
 
-.container {
-     width: 280px;
-     padding: 0 20px;
-     margin: 0 auto;
-}
+// .container {
+//      width: 280px;
+//      padding: 0 20px;
+//      margin: 0 auto;
+// }
 

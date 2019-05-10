@@ -123,8 +123,13 @@
 
         &__info {
             width: 320px;
-
+            padding-top: 21px;
             flex-direction: column;
+            
+            &--3,
+            &--4 {
+                padding-top: 18px;
+            }
         }
 
         &__row {
@@ -135,16 +140,29 @@
             max-width: 53%;
         }
 
+        &__data {
+            padding-left: 10px;
+            font-size: 72px;
+            font-weight: 700;
+            line-height: 18px;
+            margin-bottom: 23px;
+            
         
+        }
 
-
-
+        
     }
 
-    .stats__data {
-            font-size: 72px;
-font-weight: 700;
-line-height: 18px;
+    .stats__info--1 .stats__text {
+        
+        width: auto;
+        text-align: left;
+        
+        }
+
+
+        .stats__text {
+            padding-left: 15px;
         }
 
 
@@ -155,6 +173,7 @@ line-height: 18px;
         font-size: 20px;
         font-weight: 400;
         line-height: 27px;
+        margin-bottom: 28px;
     }
 
     .stats__title {
@@ -164,7 +183,7 @@ line-height: 18px;
         text-transform: none;
         margin-top: 33px;
         padding-left: 40px;
-        margin-bottom: 17px;
+        margin-bottom: 11px;
         text-align: left;
 
     }
@@ -176,6 +195,11 @@ line-height: 18px;
         max-width: 36%;
         text-align: left;
         margin-top: 36px;
+    }
+
+    .stats__column .stats__text--lying {
+        display: inline-block;
+        color: #b2b2b2;
     }
 }
 

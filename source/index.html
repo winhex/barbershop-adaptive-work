@@ -11,7 +11,14 @@
   <body class="main-page">
     <header class="main-header">
         <!-- <picture class="main-header__logo"> -->
-            <img class="main-header__img" src="img/mobile-logo.png" width="226" height="30" alt="логотип Барбершоп">
+            <picture>
+              <source media="(min-width: 1200px)"
+              srcset="img/desktop-logo.png">
+              <source media="(min-width: 768px)"
+              srcset="img/tablet-logo.png">
+              <img class="main-header__img" src="img/mobile-logo.png" width="226" height="30" alt="логотип Барбершоп">
+            </picture>
+            
           <!-- </picture> -->
           <h1 class="visually-hidden">главная страница</h1>
       
@@ -36,7 +43,7 @@
         <div class="stats__top container--tablet">
           <div class="stats__column">
           <p class="stats__title">Стрижка у нас это выгодно!</p>
-          <p class="stats__text--lying"><sup>*</sup>-приведенные данные - ложь</p>
+          <p class="stats__text--lying"><sup>*</sup> &#8212; приведенные данные - ложь</p>
         </div>
             <p class="stats__about">
                 Мужская стрижка требует точного подхода. Обратимся к статистике:

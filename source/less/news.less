@@ -1,0 +1,42 @@
+.news {
+    background-color: #f8f5f2;
+    color: #000000;
+    padding-top: 35px;
+    
+    &__title {
+        margin:0;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+
+    }
+
+    &__date {
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        background-color: #000000;
+        text-align: center;
+    }
+
+    &__digit {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 30px;
+        position: relative;
+        
+        &:after {
+            content: "";
+            position: absolute;
+            width: 0; 
+            height: 0;
+            border-left: 30px solid transparent;
+            border-right: 26px solid transparent;
+            border-top: 16px solid #000000;
+            top: 55px;
+            left: -17px;
+        }
+    }
+}

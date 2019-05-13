@@ -10,20 +10,18 @@
 </head>
   <body class="main-page">
     <header class="main-header">
-        <!-- <picture class="main-header__logo"> -->
+        
             <picture>
-              <source media="(min-width: 1200px)"
-              srcset="img/desktop-logo.png">
-              <source media="(min-width: 768px)"
-              srcset="img/tablet-logo.png">
+              <source media="(min-width: 1200px)"  srcset="img/desktop-logo.png">
+              <source media="(min-width: 768px)"   srcset="img/tablet-logo.png">
               <img class="main-header__img" src="img/mobile-logo.png" width="226" height="30" alt="логотип Барбершоп">
             </picture>
             
-          <!-- </picture> -->
+          
           <h1 class="visually-hidden">главная страница</h1>
       
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button"></button>
             <div class="main-nav__container">
           <ul class="nav-list">
             <li class="nav-list__item nav-list__item--active"><a  class="nav-list__link">главная</a></li>
@@ -119,7 +117,33 @@
       </div>
       </section>
       
-      <section class="news"></section>
+      <section class="news">
+        <h2 class="news__title">новости и акции</h2>
+        <div class="news__date news__date--first">
+          <span class="news__digit">29</span>
+          <span class="news__month">сент</span>
+        </div>
+        <p class="news__text">
+          Нам наконец завезли Ягермайстер! Теперь вы можете пропусить стаканчик во время стрижки.
+        </p>
+
+        <p class="news__date news__date--second">
+            <span class="news__digit">19</span>
+            <span class="news__month">сент</span>
+          </p>
+        <p class="news__text news__text--second">
+          В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!
+        </p>
+        <a class="news__button">показать все</a>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title">отзывы о нас</h2>
+        <p class="feedback__text">
+          <h3 class="feedback__name">Трэвис Баркер</h3>
+          Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+        </p>
+      </section>
 
     </main>
 

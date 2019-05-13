@@ -382,6 +382,9 @@ img {
   margin-bottom: 26px;
   margin-top: 15px;
 }
+.stats__text--lying {
+  margin-top: 10px;
+}
 .stats__text {
   color: #f7f4f1;
   font-size: 18px;
@@ -488,6 +491,7 @@ img {
     font-weight: 400;
     line-height: 27px;
     margin-bottom: 28px;
+    margin-top: 10px;
   }
   .stats__title {
     margin-bottom: 39px;
@@ -535,12 +539,12 @@ img {
   list-style: none;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 38px;
 }
 .merits__title {
   text-transform: uppercase;
   color: #f7f4f1;
-  margin-top: 170px;
+  margin-top: 148px;
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
@@ -564,7 +568,7 @@ img {
 }
 .merits__item--fast::before {
   background-image: url("../img/advantage-1.png");
-  top: 100px;
+  top: 85px;
 }
 .merits__item--cool::before {
   background-image: url("../img/advantage-2.png");
@@ -582,9 +586,13 @@ img {
   font-size: 20px;
   font-weight: 400;
   line-height: 27px;
+  margin-top: 0;
 }
 .merits__list .stats__text--lying {
   display: inline-block;
+}
+.merits__title {
+  margin-bottom: 13px;
 }
 @media (min-width: 768px) {
   .merits__title {
@@ -633,4 +641,48 @@ img {
 .news {
   background-color: #f8f5f2;
   min-height: 50px;
+}
+.news {
+  background-color: #f8f5f2;
+  color: #000000;
+  padding-top: 35px;
+}
+.news__title {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.news__date {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+}
+.news__digit {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  position: relative;
+}
+.news__digit:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 26px solid transparent;
+  border-top: 16px solid #000000;
+  top: 55px;
+  left: -17px;
+}
+.feedback {
+  background-color: #f8f5f2;
+  color: #000000;
+}
+.feedback__title {
+  margin: 0;
 }

@@ -723,10 +723,32 @@ img {
   line-height: 50px;
   margin-top: 5px;
 }
+.news__line {
+  margin: 0 auto;
+  width: 277px;
+  background-color: #e5ddd5;
+  height: 1px;
+  border: none;
+}
 .feedback {
   background-color: #f8f5f2;
   color: #000000;
+  padding-top: 27px;
 }
 .feedback__title {
   margin: 0;
+}
+.feedback__line {
+  margin: 0 auto;
+  background-color: #e5ddd5;
+  height: 1px;
+  border: none;
+}
+.feedback__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 26px;
 }

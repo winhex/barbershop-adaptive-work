@@ -824,6 +824,10 @@ img {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+.footer {
+  border-top: 1px solid #353535;
+  padding-bottom: 20px;
+}
 .footer__title {
   text-align: center;
   font-size: 18px;
@@ -838,30 +842,47 @@ img {
 }
 .footer__developer {
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 13px;
 }
 .footer__social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 24px;
+  margin-bottom: 0;
   list-style: none;
   padding: 0;
-}
-.footer__item {
+  min-height: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-top: 1px solid #3f3f3f;
   border-bottom: 1px solid #3f3f3f;
-  border-color: #3e3e3e;
 }
 .footer--vk {
   padding: 40px;
+  padding-left: 30px;
 }
 .footer--fb {
-  padding: 30px 40px 30px 40px;
+  padding: 47px 40px 29px 40px;
+  border-left: 1px solid #3f3f3f;
+  border-right: 1px solid #3f3f3f;
 }
 .footer--instagram {
   padding: 30px;
+  padding-left: 41px;
+}
+.footer__btn {
+  width: 280px;
+  margin: 0 auto;
+  border-color: #3d3d3d;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 50px;
 }
 .phone-button {
   color: #ffffff;

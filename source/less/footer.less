@@ -1,4 +1,6 @@
 .footer {
+	border-top: 1px solid #353535;
+	padding-bottom: 20px;
 	&__title {
 		text-align: center;
 		font-size: 18px;
@@ -17,37 +19,48 @@
 
 	&__developer {
 		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 13px;
 	}
 
 	&__social {
 		display: flex;
-        justify-content: space-around;
-        margin-top: 24px;
+        justify-content: center;
+		margin-top: 24px;
+		margin-bottom: 0;
         list-style: none;
-        padding: 0;
-	}
-
-	&__item {
-		    border-top: 1px solid #3f3f3f;
+		padding: 0;
+		min-height: 100px;
+    align-items: center;
+    border-top: 1px solid #3f3f3f;
     border-bottom: 1px solid #3f3f3f;
-    border-color: #3e3e3e;
-	}
-
-	&__link {
-		
-		
-	}
+	
+    }	
+	
 
 	&--vk {
 		padding: 40px;
+		padding-left: 30px;
 	}
 
 	&--fb {
-		padding: 30px 40px 30px 40px;
+		padding: 47px 40px 29px 40px;
+		border-left: 1px solid #3f3f3f;
+		border-right: 1px solid #3f3f3f;
 	}
 
 	&--instagram {
 		padding: 30px;
+		padding-left: 41px;
+	}
+
+	&__btn {
+		width: 280px;
+		margin: 0 auto;
+		border-color: #3d3d3d;
+		color: #ffffff;
+		font-weight: 700;
+		line-height: 50px;
 	}
 }
 

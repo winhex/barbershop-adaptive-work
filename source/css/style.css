@@ -633,15 +633,27 @@ img {
   margin-bottom: 13px;
 }
 @media (min-width: 768px) {
-  .merits__title {
-    margin-top: 42px;
+  .merits::after {
+    bottom: 16px;
+  }
+  .merits__list {
+    padding-bottom: 53px;
   }
   .merits__list .stats__text--lying {
     display: none;
   }
+  .merits__item--fast .merits__title {
+    margin-top: 42px;
+  }
+  .merits__item--cool .merits__title {
+    margin-top: 54px;
+  }
+  .merits__item--pricy .merits__title {
+    margin-top: 78px;
+  }
   .merits__item {
     display: block;
-    padding-left: 120px;
+    padding-left: 116px;
     text-align: left;
   }
   .merits__item--fast::before,
@@ -652,7 +664,7 @@ img {
     background-repeat: no-repeat;
     width: 94px;
     height: 95px;
-    left: 50px;
+    left: 36px;
   }
   .merits__item--fast::before {
     background-image: url("../img/advantage-1.png");
@@ -666,14 +678,29 @@ img {
     background-image: url("../img/advantage-3.png");
     top: 0;
   }
-  .merits__item:not(:last-child):after {
+  .merits__list .merits__item--fast::after {
     content: "";
     position: absolute;
     right: 10px;
-    bottom: -20px;
+    bottom: -12px;
     left: 7px;
     height: 1px;
     background-color: #4a4a4a;
+  }
+  .merits__list .merits__item--cool::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -37px;
+    left: 7px;
+    height: 1px;
+    background-color: #4a4a4a;
+  }
+  .merits__slider {
+    display: none;
+  }
+  .merits__list {
+    margin-top: -10px;
   }
 }
 .news {

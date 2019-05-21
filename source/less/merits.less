@@ -125,79 +125,127 @@ margin-top: 0;
 
 @media (min-width: @tablet-width) {
 
-    
+    .merits {
+        &::after {
+            bottom: 16px;
+        }
+        &__list {
+            padding-bottom: 53px;            
+        }
 
-    .merits__title {
-        margin-top: 42px;
-    }
+        &__list .stats__text--lying {
+            display: none;
+        }
 
-    .merits__list .stats__text--lying {
-        display: none;
-    }
+        &__item--fast .merits__title {
+            margin-top: 42px;
+        }
 
-    .merits__item {
-        display: block;
-        padding-left: 120px;
-        text-align: left;
-        &--fast::before,
-    &--cool::before,
-    &--pricy::before {
-        content: "";
-          position: absolute;
-          
-          background-repeat: no-repeat;
-          width: 94px;
-          height: 95px;
-          
-          left: 50px;
-          
-             
-          }
-          &--fast::before {
-              background-image: url("../img/advantage-1.png");
-              top: 0;
-          }
+        &__item--cool .merits__title {
+            margin-top: 54px;
+        }
 
-          
-          &--cool::before {
-              background-image: url("../img/advantage-2.png");
+        &__item--pricy .merits__title {
+            margin-top: 78px;
+        }
+
+        &__item {
+            display: block;
+            padding-left: 116px;
+            text-align: left;
+
+            &--fast::before,
+            &--cool::before,
+            &--pricy::before {
+            content: "";
+              position: absolute;
               
-              top: 0;
-    
-          }
-
-    
-          &--pricy::before {
-              background-image: url("../img/advantage-3.png");
+              background-repeat: no-repeat;
+              width: 94px;
+              height: 95px;
               
-              top: 0;
-          }
-    }
+              left: 36px;
+              
+                 
+              }
+              &--fast::before {
+                  background-image: url("../img/advantage-1.png");
+                  top: 0;
+              }
+    
+              
+              &--cool::before {
+                  background-image: url("../img/advantage-2.png");
+                  
+                  top: 0;
+        
+              }
+    
+        
+              &--pricy::before {
+                  background-image: url("../img/advantage-3.png");
+                  
+                  top: 0;
+              }
 
-    .merits__item:not(:last-child):after {
-        content: "";
+              
+              
 
-      position: absolute;
-      right: 10px;
-      bottom: -20px;
-      left: 7px;
-      height: 1px;
-      background-color: #4a4a4a;
+
+
+            //   &:not(:last-child):after {
+                
+            // }
+        }
+
+        &__list {
+            .merits__item--fast::after {
+                content: "";
+        
+                position: absolute;
+                right: 10px;
+                bottom: -12px;
+                left: 7px;
+                height: 1px;
+                background-color: #4a4a4a;
+    
+              }
+    
+              .merits__item--cool::after {
+                content: "";
+        
+                position: absolute;
+                right: 10px;
+                bottom: -37px;
+                left: 7px;
+                height: 1px;
+                background-color: #4a4a4a;
+    
+              }
+
+        } 
+
+        &__slider {
+            display: none;
+        }
+
+        &__list {
+            margin-top: -10px;
+        }
+
+
     }
     
-    // .merits {
-    //     position: relative;
-    //     padding-bottom: 42px;
-    // }
-    // .merits:after {
-    //     content: ''; 
-    // position: absolute; /* Абсолютное позиционирование */
-    // left: 50%;
-    // bottom: -5px; /* Положение треугольника */
-    // border: 500px solid transparent; /* Прозрачные границы */
-    // border-top: 42px solid green; /* Добавляем треугольник */
 
-    // }
+    
+
+    
+
+    
+
+    
+    
+    
 
 
 

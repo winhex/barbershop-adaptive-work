@@ -69,6 +69,16 @@ img {
   width: 76px;
   margin: 0 auto;
 }
+.slider-control--btn {
+  width: 7px;
+  height: 7px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  border: 1px solid #000;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .main-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,13 +561,23 @@ img {
   background-position: 0 0,100% 0;
   background-size: 50.1% 100%;
 }
+.merits__slider {
+  padding-bottom: 47px;
+}
+.merits__slider .slider-control--btn {
+  border: 1px solid #ffffff;
+  background-color: #242424;
+}
+.merits__slider .active-btn {
+  background-color: #ffffff;
+}
 .merits__list {
   margin: 0;
   padding: 0;
   list-style: none;
   padding-left: 45px;
   padding-right: 45px;
-  padding-bottom: 38px;
+  margin-bottom: -16px;
 }
 .merits__title {
   text-transform: uppercase;
@@ -813,16 +833,6 @@ img {
 }
 .feedback__slider .active-btn {
   background-color: #000;
-}
-.slider-control--btn {
-  width: 7px;
-  height: 7px;
-  padding: 0;
-  font-size: 0;
-  line-height: 0;
-  border: 1px solid #000;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 .footer {
   border-top: 1px solid #353535;

@@ -156,13 +156,23 @@
         <a href="#" class="feedback__button button">оставить свой</a>
         </div>
 
-         <h3 class="feedback__name">Трэвис Баркер</h3>
+         
          <div class="feedback__item">
-          <img class="feedback__img" src="img/barker-mobile.jpg" alt="Трэвис Баркер" width="50" height="51">
+         <button class="feedback__slider-btn slider-btn--left"></button>
+
+         <div class="feedback__quote">
+           <h3 class="feedback__name">Трэвис Баркер</h3>             
          
         <p class="feedback__text">
          Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
         </p>
+         </div>
+         
+        <picture>
+            <source media="(min-width: 768px)"   srcset="img/barker-tablet.png">
+            <img class="feedback__img" src="img/barker-mobile.jpg" alt="Трэвис Баркер" width="50" height="51">
+          </picture>
+          <button class="feedback__slider-btn slider-btn--right"></button>
         </div>
         <div class="feedback__slider slider-control">
           <button class="slider-control--btn active-btn"></button>

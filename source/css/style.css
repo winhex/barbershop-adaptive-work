@@ -918,6 +918,7 @@ img {
 @media (min-width: 768px) {
   .feedback {
     padding-top: 7px;
+    padding-bottom: 69px;
   }
   .feedback__button {
     display: inline-block;
@@ -994,6 +995,11 @@ img {
   }
   .feedback__text {
     margin: 0;
+  }
+  .feedback__slider {
+    position: relative;
+    top: -5px;
+    background-color: #f8f5f2;
   }
   .feedback__slider-btn {
     display: block;

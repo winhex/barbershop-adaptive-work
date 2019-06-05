@@ -1135,6 +1135,7 @@ img {
   }
   .footer__social {
     margin: 0 auto;
+    border: 1px solid #3f3f3f;
   }
   .footer__phone {
     display: block;

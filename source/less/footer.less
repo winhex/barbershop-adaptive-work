@@ -1,6 +1,10 @@
 .footer {
 	border-top: 1px solid #353535;
 	padding-bottom: 20px;
+
+	&__phone {
+		display: none;
+	}
 	&__title {
 		text-align: center;
 		font-size: 18px;
@@ -75,4 +79,60 @@
 	border-color: #3e3e3e;
 	margin-top: 17px;
 	font-weight: 700;
+}
+
+@media (min-width: @tablet-width) {
+	.footer {
+		display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &__title {
+    	text-transform: uppercase;
+    	text-align: left;
+    }
+
+    &__address {
+    	max-width: none;
+    }
+
+    &__address-container {
+
+    	order:-1;
+    	margin-left: 64px;
+    	margin-top: 15px;
+    }
+
+    &__copiryght {
+    	order:-1;
+    	margin-right: 63px;
+    }
+
+    &__social {
+    	margin: 0 auto;
+    }
+
+    &__phone {
+    	display: block;
+    	margin: 0;
+    }
+
+    &__developer {
+    	margin-top: 48px;
+    }
+
+    &__btn {
+    	width: 160px;
+    }
+
+
+	}
+
+	.phone-button {
+		display: none;
+	}
+
+
+
 }
